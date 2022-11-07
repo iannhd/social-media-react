@@ -10,11 +10,16 @@ Outlet} from 'react-router-dom'
 import NavBar from './component/navBar/NavBar';
 import LeftBar from './component/leftBar/LeftBar';
 import RightBar from './component/rightBar/RightBar';
+import './style.scss'
+import { useContext } from 'react';
+import { DarkModeContext } from './component/context/darkModeContext';
 function App() {
+
+  const {darkMode} = useContext(DarkModeContext)
 
   const Layout = () => {
     return(
-      <div>
+      <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <NavBar />
         <div style={{display: "flex"}}>
           <LeftBar />
