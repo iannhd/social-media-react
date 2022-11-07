@@ -10,7 +10,7 @@ import Gallery from '../../assets/8.png'
 import Videos from '../../assets/9.png'
 import Message from '../../assets/10.png'
 import Tutorial from '../../assets/11.png'
-import Course from '../../assets/12.png'
+import Courses from '../../assets/12.png'
 import Funds from '../../assets/13.png'
 
 import './leftbar.scss'
@@ -21,6 +21,10 @@ const LeftBar = () => {
             <div className="menu">
                 <div className="user">
                     <img src={"https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"} alt="" />
+                    <span>User</span>
+                </div>
+                <div className="item">
+                    <img src={Friends} alt="" />
                     <span>Friends</span>
                 </div>
                 <div className="item">
@@ -40,6 +44,45 @@ const LeftBar = () => {
                     <span>Memories</span>
                 </div>
                 <hr/>
+                <div className="menu">
+                    <span>Your Shortcuts</span>
+                    <div className="item">
+                        <img src={Events} alt="" />
+                        <span>Events</span>
+                    </div>
+                    <div className="item">
+                        <img src={Gaming} alt="" />
+                        <span>Gaming</span>
+                    </div>
+                    <div className="item">
+                        <img src={Gallery} alt="" />
+                        <span>Gallery</span>
+                    </div>
+                    <div className="item">
+                        <img src={Videos} alt="" />
+                        <span>Videos</span>
+                    </div>
+                    <div className="item">
+                        <img src={Message} alt="" />
+                        <span>Message</span>
+                    </div>
+                </div>
+                <hr/>
+                <div className="menu">
+                    <span>Others</span>
+                    <div className="item">
+                        <img src={Funds} alt="" />
+                        <span>Funds</span>
+                    </div>
+                    <div className="item">
+                        <img src={Tutorial} alt="" />
+                        <span>Tutorial</span>
+                    </div>
+                    <div className="item">
+                        <img src={Courses} alt="" />
+                        <span>Courses</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

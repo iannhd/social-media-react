@@ -4,7 +4,9 @@ import './rightbar.scss'
 
 const RightBar = () => {
   return (
-    <div>RightBar</div>
+    <div className='rightBar'>
+        <h1>Right Bar</h1>
+    </div>
   )
 }
 
